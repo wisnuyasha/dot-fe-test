@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DOT FE TEST
 
-## Getting Started
+## Functional Requirements
+- as a user I can login
+- as a user I can answer one question at a time & auto-redirected next.
+- as a user I can see a countdown timer while doing the quiz (ends the quiz when time is up).
+- as a user I can view total number of questions, how many I answered, and my score at the end.
+- as a user I can resume my quiz from where it closed
 
-First, run the development server:
+## Non-Functional Requirements
+- the quiz states (answers, quiz progress, & time left) should be reliably saved to localStorage.
+- the app must be deployed (with vercel)
+- the app must work properly both on mobile/desktop
+- the codebase should be modular with reusable logic and components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tools
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **nextjs:** main framework for routing and building API endpoints in one project.
+- **typescript:** adds static typing for safer, more maintainable code.
+- **tailwindcss:** utility-first CSS framework for fast and consistent UI development.<!-- - **shadcn:** customizable UI components. -->
+- **zustand:** lightweight & simple global state management.
+- **react-query:** efficient data fetching and caching from APIs.
+- **supabase:** open-source backend as a service for authentication and database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Todos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [x] **authentication**
+  - [x] slice login page
+  - [x] login implementation (using supabase / server action)
+- [ ] **quiz**
+  - [ ] slice quiz page
+  - [ ] fetch questions from OpenTDB API
+  - [ ] show total questions & current progress
+  - [ ] show timer
+  - [ ] display one question per page & Auto-next on answer selection
+  - [ ] auto-submit when timer ends
+  - [ ] show result summary (correct, incorrect, attempted)
+- [ ] **persistence & resume feature**
+  - [ ] save quiz progress in localStorage
+  - [ ] auto-resume quiz after reload/close
