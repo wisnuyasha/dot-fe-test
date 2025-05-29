@@ -29,12 +29,12 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
         <div className="space-y-2.5 mb-4">
           <h1
             id="login-form-heading"
-            className="font-sans font-bold text-slate-900 text-4xl"
+            className="font-bold text-slate-900 text-4xl"
           >
             Login
           </h1>
-          <p className="font-sans text-sm text-slate-500">
-            Please enter your name and password to log in.
+          <p className="text-sm text-slate-500">
+            Please enter your email and password to log in.
           </p>
         </div>
         <LoginForm />
