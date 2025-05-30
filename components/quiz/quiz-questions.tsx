@@ -3,10 +3,11 @@ import { RiHourglassFill } from "react-icons/ri";
 import React from "react";
 import { formatTime } from "@/utils/formatTime";
 import cn from "@/lib/cn";
+import { QuizAnswer, QuizQuestion } from "@/types/quiz";
 
 interface QuizQuestionSectionProps {
-  questions: any[];
-  answers: any[];
+  questions: QuizQuestion[];
+  answers: QuizAnswer[];
   current: number;
   status: string;
   timeLeft: number;
@@ -17,7 +18,7 @@ interface QuizQuestionSectionProps {
   totalQuestions: number;
   answeredCount: number;
   progress: number;
-  currentQuestion: any;
+  currentQuestion: QuizQuestion;
 }
 
 export default function QuizQuestionSection({
