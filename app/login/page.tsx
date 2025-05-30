@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Login",
+  title: "Login | DOT FE Test",
   description: "Login page",
 };
 
@@ -24,7 +24,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     >
       <section
         aria-labelledby="login-form-heading"
-        className="flex h-fit flex-col rounded-xl border-[1px] border-slate-300 bg-white p-6 shadow-sm md:p-10 w-full sm:w-fit sm:min-w-96"
+        className="flex h-fit flex-col rounded-xl border-1 border-slate-300 bg-white p-6 shadow-sm md:p-10 w-full sm:w-fit sm:min-w-96"
       >
         <div className="space-y-2.5 mb-4">
           <h1

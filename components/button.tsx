@@ -12,7 +12,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         type={type}
         className={cn(
-          "inline-flex items-center cursor-pointer justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 text-sm bg-zinc-900 text-white hover:bg-zinc-800 focus-visible:ring-zinc-900",
+          "inline-flex items-center cursor-pointer justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-10 px-4 text-sm bg-slate-900 text-white focus-visible:ring-slate-900",
           className
         )}
         ref={ref}
