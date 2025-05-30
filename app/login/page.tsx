@@ -24,16 +24,16 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
     >
       <section
         aria-labelledby="login-form-heading"
-        className="flex h-fit flex-col rounded-xl border-1 border-slate-300 bg-white p-6 shadow-sm md:p-10 w-full sm:w-fit sm:min-w-96"
+        className="flex h-fit flex-col rounded-xl bg-white p-6 md:p-10 w-full sm:w-fit sm:min-w-96"
       >
         <div className="space-y-2.5 mb-4">
           <h1
             id="login-form-heading"
-            className="font-bold text-slate-900 text-4xl"
+            className="font-bold text-neutral-900 text-4xl"
           >
             Login
           </h1>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-neutral-500">
             Please enter your email and password to log in.
           </p>
         </div>

@@ -22,7 +22,7 @@ export default function LoginForm() {
         placeholder="tes123"
         required
       />
-      <Button type="submit" className="w-full">
+      <Button type="submit" className="bg-slate-500 hover:bg-slate-600 w-full">
         Login
       </Button>
     </form>
