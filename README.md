@@ -18,8 +18,8 @@
 - **nextjs:** main framework for routing and building API endpoints in one project.
 - **typescript:** adds static typing for safer, more maintainable code.
 - **tailwindcss:** utility-first CSS framework for fast and consistent UI development.<!-- - **shadcn:** customizable UI components. -->
-- **zustand:** lightweight & simple global state management.
-- **react-query:** efficient data fetching and caching from APIs.
+- **zustand:** lightweight, robust & simple global state management.
+- **react-query:** efficient data fetching from APIs.
 - **supabase:** open-source backend as a service for authentication and database.
 
 ## Todos
@@ -27,14 +27,12 @@
 - [x] **authentication**
   - [x] slice login page
   - [x] login implementation (using supabase / server action)
-- [ ] **quiz**
-  - [ ] slice quiz page
-  - [ ] fetch questions from OpenTDB API
-  - [ ] show total questions & current progress
-  - [ ] show timer
-  - [ ] display one question per page & Auto-next on answer selection
-  - [ ] auto-submit when timer ends
-  - [ ] show result summary (correct, incorrect, attempted)
-- [ ] **persistence & resume feature**
-  - [ ] save quiz progress in localStorage
-  - [ ] auto-resume quiz after reload/close
+- [x] **quiz**
+  - [x] slice quiz page (result, starting, questions)
+  - [x] fetch questions from OpenTDB API
+  - [x] show total questions & current progress
+  - [x] show timer
+  - [x] display one question per page & Auto-next on answer selection
+  - [x] auto-submit when timer ends
+  - [x] show result summary (correct, incorrect, attempted)
+  - [x] save quiz progress in localStorage (using zustand/persist)
