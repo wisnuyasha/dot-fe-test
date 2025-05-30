@@ -22,7 +22,7 @@ export default function QuizResultSection({
     >
       <section className="w-full max-w-4xl h-full flex flex-col gap-5 p-10 bg-white rounded-lg items-center">
         <FaMedal className="size-14 md:size-18 text-neutral-800" />
-        <h1 className="font-bold text-3xl md:text-4xl text-neutral-700">
+        <h1 className="font-bold text-3xl text-center md:text-4xl text-neutral-700">
           Overall Performances
         </h1>
         <p className="font-medium text-lg text-neutral-600">
