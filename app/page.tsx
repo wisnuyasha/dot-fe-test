@@ -1,16 +1,11 @@
 import { redirect } from "next/navigation";
-import { createClient } from "@/utils/supabase/server";
+// TEMP: Auth disabled for prod screenshots - re-enable when done
+// import { createClient } from "@/utils/supabase/server";
 
 export default async function Home() {
-  const supabase = await createClient();
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  if (!user) {
-    return redirect("/login");
-  } else {
-    return redirect("/quiz");
-  }
+  // TEMP: Skip auth check - always go to quiz for SS
+  // const supabase = await createClient();
+  // const { data: { user } } = await supabase.auth.getUser();
+  // if (!user) return redirect("/login");
+  return redirect("/quiz");
 }
